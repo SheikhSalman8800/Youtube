@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <title>Burial Insurer Quotes</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <img src="image/burial_logo.png">
+         </header>
+         <main class="main_content congr">
+            <h3 class="question congrats-green">CONGRATULATIONS, YOU PRE QUALIFY!</h3>
+            <h4 class="question_serc">Make a <b> quick call</b> to claim up to a<span class="amount">$25,000</span> <b>funeral benefit for as little as $1/day</b></h4>
+            <h6>Spots Remaining:4</h6>
+            <div class="call_box_ser">
+               <h2>
+                  <img src="image/downarrow.svg" class="bounce-arrow"> 
+                  TAP TO CALL 
+                  <img src="image/downarrow.svg" class="bounce-arrow">
+                </h2>
+            </div>
+            <a id="myBtn" href="tel:8777000552" class="call-now-wrapper">
+               <button class="custom-call-button">
+                 <div class="call-text-wrapper">
+                   <span class="call-label">CALL NOW:</span><br>
+                   <span class="phone-number">877-700-0552</span>
+                 </div>
+               </button>
+             </a>
+             
+            
+            <div class="bottmom_box_gr">
+               <h2>ACT FAST!</h2>
+               <p>Due to high call demand, your hotline will remain available for the next:</p>
+            </div>
+            <div class="bottmom_box_time">
+               <div class="box-inner">
+                  <label id="minutes">00</label>
+                  <label id="colon">:</label>
+                  <label id="seconds">00</label>
+               </div>
+            </div>
+
+
+            <div class="text_bottom ">
+               <p><b><strong>Disclaimer:</strong></b> Burial InsurerQuotes.com is a referral source that provides information and access to a helpline to match consumers with companies that may provide certain insurance coverage to them. BurialInsurerQuotes.com does not act as an insurance broker and does not make decisions about insurance coverage that may be available to you. BurialInsurerQuotes.com doesn’t promise a specific outcome or the results you may achieve by calling the helpline. The helpline is free to call but the services or programs that you pursue may have costs associated with them.</p>
+               <p><b><strong>Legal Disclosure:</strong></b> The advertised rate of "up to $25,000 in coverage for as little as $2 per day" is based on a policy for a healthy, non-smoking female, age 50. Rates may vary depending on age, health, tobacco use, and other underwriting factors, as well as the availability of specific products and carriers in your state. Not all applicants will qualify for the advertised rate or coverage amount, and the final premium may differ. Coverage options and availability are subject to carrier guidelines and state regulations.
+Privacy Policy | Terms and conditions
+© All rights reserved</p>
+            </div>
+         </main>
+         <div class="footer">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms & conditions</a> | <a href="#">Contact</a>
+         </div>
+      </div>
+
+      <script type="text/javascript">
+         var minutesLabel = document.getElementById("minutes");
+         var secondsLabel = document.getElementById("seconds");
+         var totalSeconds = 300; // 5 minutes = 300 seconds
+      
+         function setTime() {
+            if (totalSeconds <= 0) {
+               clearInterval(timerInterval);
+               minutesLabel.innerHTML = "00";
+               secondsLabel.innerHTML = "00";
+               return;
+            }
+      
+            let minutes = Math.floor(totalSeconds / 60);
+            let seconds = totalSeconds % 60;
+      
+            minutesLabel.innerHTML = pad(minutes);
+            secondsLabel.innerHTML = pad(seconds);
+      
+            totalSeconds--;
+         }
+      
+         function pad(val) {
+            return val < 10 ? "0" + val : val;
+         }
+      
+         var timerInterval = setInterval(setTime, 1000);
+         setTime(); // initial call to display immediately
+      </script>
+      
+   </body>
+</html>

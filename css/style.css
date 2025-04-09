@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Main content */
+.main_content {
+    text-align: center;
+}
+
+.question {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.amount {
+    font-weight: 700;
+    color: #004AAC;
+}
+
+.instructions {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0px 40px;
+}
+
+.text_box {
+    color: #004AAC;
+}
+
+.custom-call-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004AAC;
+    color: #fff;
+    border: 1px solid #004AAC;
+    border-radius: 10px;
+    padding: 16px 24px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    text-decoration: none !important;
+    animation: pulse 1.5s infinite;
+    box-sizing: border-box;
+}
+
+.call-now-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.call-now-wrapper a {
+    text-decoration: none !important;
+    display: block;
+    color: inherit;
+}
+
+.call-now-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+.small-text {
+    text-transform: uppercase;
+}
+
+.arrow-icon {
+    width: 14px;
+    height: 14px;
+    animation: slide-arrow 1.5s ease-in-out infinite;
+}
+
+.arrow {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.call-now-button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes slide-arrow {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Responsive image fix */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+/* Bottom text */
+.text_bottom {
+    padding: 10px 15px;
+}
+
+.text_bottom h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #000;
+}
+
+.text_bottom p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #000;
+}
+.phone-number {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  @media (max-width: 768px) {
+    .phone-number {
+      font-size: 2 8px;
+    }
+  }
+  
+/* Footer */
+.footer {
+    background-color: #0055b8;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 100%; /* ✅ Ensure full width */
+    box-sizing: border-box; /* ✅ Includes padding in width */
+  }
+  @media (max-width: 768px) {
+    .footer {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      box-sizing: border-box;
+    }
+  }
+  
+  
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0 0 0 / 83%);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 46px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center; /* Center modal text */
+}
+
+.modal-content h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    line-height: 42px;
+    text-align: center;
+}
+
+.modal-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 15px;
+}
+
+.modal-content ul li {
+    margin: 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.modal-content ul li a {
+    display: block;
+    background-color: #01A74B;
+    color: #fff;
+    padding: 12px 38px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button_true {
+    background-color: #E00000 !important;
+    padding: 12px 43px !important;
+}
+
+/* Close */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Buttons on Step 2 */
+.green-button {
+    background-color: #01A74B;
+    color: #fff;
+    padding: 12px 38px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
+.green-button:hover {
+    background-color: #029b44;
+}
+
+/* Congrats page */
+.congr h2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .congr h2 img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+  
+  
+  /* Adjust gap for larger screens */
+  @media screen and (min-width: 768px) {
+    .congr h2 {
+      gap: 4px; /* tighter on desktop */
+    }
+  }
+  
+  
+
+.question_serc {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.congr h6 {
+    color: #E00000;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.call_box_ser {
+    margin-top: 30px;
+}
+
+.call_box_ser h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.congr .call-now-wrapper {
+    padding: 10px 0;
+}
+
+.bottmom_box_gr {
+    padding-top: 30px;
+}
+
+.bottmom_box_gr h2 {
+    font-size: 24px;
+    text-decoration: underline;
+    color: #E00000;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.congrats-green {
+    color: #01A74B; /* or whatever green you were using */
+    font-weight: 700;
+  }
+  
+.bottmom_box_gr p {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #000;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.bottmom_box_time {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  @keyframes bounceVertical {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
+  
+  .bounce-arrow {
+    animation: bounceVertical 1.2s infinite;
+    vertical-align: middle;
+    margin: 0 5px; /* Adjust spacing */
+  }
+    
+  
+
+
+  
+  .box-inner {
+    display: flex; /* ➜ Makes the labels align horizontally */
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* ➜ Optional: space between the numbers and colon */
+    border-radius: 2px;
+    border: 1px solid #01A74B;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 0 auto;
+    color: #004AAC;
+    font-weight: 700;
+    font-size: 24px;
+  }
+.congra p {
+    text-align: left;
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 768px) {
+    .custom-call-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+    }
+
+    .modal-content ul li a {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .green-button {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .instructions {
+        padding: 0 20px;
+    }
+}
